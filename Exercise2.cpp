@@ -1,31 +1,29 @@
 /*
-2. Input an array of integers, return indices of the two numbers such that
-they add up to a specific target. You may not use the same element twice.
+2. Input n strings from keyboard and sort them ascendingly.
 Ex:
-______________________________________
-| Input: [2, 7, 11, 15] target = 9   |
-| Output: 0 1                        |
-|____________________________________|
+ _________________________________________
+| Input: n = 3, strings: "one two three"  |
+| Output: "one three two"                 |
+|_________________________________________|
 */
 
 #include <stdio.h>
 #include <stdlib.h>
 
-int ex2(int target, int n, int arr[]){
+int ex2(int n, char *str[]){
 	//your codes here
 }
 
 int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
-	int target = atoi(argv[1]);
-	int arrl = argc - 2;
-	int testcase[arrl];
+	int n = atoi(argv[1]);
+	char *str[n];
 	int i;
-	for(i=0; i<arrl; i++){
-		testcase[i] = atoi(argv[i+2]);
+	for(i=0; i<n; i++){
+		str[i] = argv[i+2];
 	}
 
-	ex2(target, 4, testcase);
+	ex2(n, str);
 		
 	return 0;
 }

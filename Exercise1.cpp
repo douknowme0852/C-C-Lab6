@@ -1,20 +1,20 @@
 /*
-1. Input a string, find the length of the longest substring without repeating characters.
-______________________________________
-| Input: "abcabcbb"                  |
-| Output: "abc" 3                    |
-|____________________________________|
+1. Input a maximum 4-digit integer n. Write a program to read the number n.
+ ________________________________________________
+| Input: 1234                                    |
+| Output: "one thousand two hundred thirty four" |
+|________________________________________________|
 */
 
 #include <stdio.h>
 #include <stdlib.h>
 
-int ex1(char str[]){
+int ex1(int testcase){
 	//your codes here
 }
 
 int main(int argc, char *argv[]) {
-	char *testcase = argv[1];
+	int testcase = atoi(argv[1]);
 	
 	ex1(testcase);
 		
