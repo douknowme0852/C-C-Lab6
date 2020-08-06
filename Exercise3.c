@@ -9,20 +9,15 @@ Ex:
 #include <stdio.h>
 #include <stdlib.h>
 
-int ex3(int n, char *str[]){
+int ex3(char *str){
 	//your codes here
 }
 
 int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
-	int n = atoi(argv[1]);
-	char *str[n];
-	int i;
-	for(i=0; i<n; i++){
-		str[i] = argv[i+2];
-	}
+	char *str = "This is a string";
 
-	ex3(n, str);
+	ex3(str);
 		
 	return 0;
 }
